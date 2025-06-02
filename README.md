@@ -55,3 +55,15 @@ You can customize the training process using the following arguments:
    ```bash
     python predict.py
     ```
+
+You can customize the prediction behavior with the following options:
+﻿
+| Argument            | Description                                         | Default                              |
+|---------------------|-----------------------------------------------------|------------------------------------|
+| `--model`, `-m`     | Path to the model checkpoint file                    | `./checkpoint/checkpoint_epoch501.pth` |
+| `--viz`, `-v`       | Visualize images and predicted masks during testing  | Disabled                           |
+| `--no-save`, `-n`   | Do not save the predicted masks                       | Disabled                           |
+| `--mask-threshold`, `-t` | Threshold to binarize predicted masks            | 0.5                               |
+| `--scale`, `-s`     | Scale factor for input images                          | 1                                 |
+| `--bilinear`        | Use bilinear upsampling                                | Disabled                          |
+﻿
